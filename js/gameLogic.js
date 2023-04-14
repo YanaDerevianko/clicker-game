@@ -15,7 +15,7 @@ const hero = document.getElementById('hero');
 // початкові  дані
 let userLevel = 1;
 let userClick = 0;
-const numberOfEnemyLives = 13;
+const numberOfEnemyLives = 17;
 
 //  функція  для  обробки кліку
 function handleClick() {
