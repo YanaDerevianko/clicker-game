@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker game</title>
+    <link rel="stylesheet" href="gameStyles.css" />
+</head>
+<body style="background-image: url('./images/bg1.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+
+    <div id="infoWrapper" class="info-wrapper">
+        <p id="userName" class="user-name"></p>
+        <p id="userLevel">Level <span id="level">1</span></р>
+        <p id="points" class="points">Your points: <span id="userPoints">0</span></p>
+    </div>
+    <div class="image-wrapper">
+      <img id="hero" src="./images/hero1.png" alt="Alternative text">
+    </div>
+
+    
+
+
+    <!-- congratulations on moving to a new level -->
+    <div class="overlay">
+        <div class="popup">
+          <p>Congratulations, you have<br>reached level <span id="lev">2</span></p>
+        </div>
+      </div>
+<!-- final congratulations -->
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Congratulations!</h2>
+          <p>You have completed all levels!</p>
+          <p>Your points: <span id="finalPoints"></span></p>
+        </div>
+      </div>
+
+    <script src="./js/gameLogic.js" type="module"></script>
+</body>
+</html>
